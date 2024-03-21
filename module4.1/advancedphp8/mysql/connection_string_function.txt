@@ -1,0 +1,87 @@
+difference b/w sql and mysql 
+
+SQL : sql stands for structured query language
+      sql is used to create a database and table structured 
+      sql is case-insenstive language 
+      sql is used some query language 
+       DDL, DML ,DQL,TCL
+
+MYSQL : mysql stands for my structured query language this is a database
+        Database is used to stored information about users data i.e called database 
+        database is used to connect a dynamic applications using mysql function.
+        mysql is a case senstive
+
+diffrence b/w mysql and mysqli 
+
+MYSQL : this is a database 
+MYSQLI  this is also a databse 
+        mysqli is improved version of mysql 
+        Latest vesrion of mysql 
+
+Mysqli connection functions 
+
+    a) how to connect a database 
+
+          ex: $con=mysqli_connect("localhost","root","","dbname","flag");
+                      
+
+                 flag=0  (optional)
+                 flag=1  
+
+       database connection function is two type 
+
+        a) persistent connection  flag=1
+        b) non-perstistent connection flag=0     
+
+
+        or
+
+        $con=new mysqli("localhost","root","","dbname","flag");
+
+
+        or
+
+        $ser="localhost";
+        $user="root";
+        $pass="";
+        $dbname="appname";
+        $con=new mysqli($ser,$user,$pass,$dbname);
+
+        if($con)
+        {
+            echo "Connection successfully";
+        }
+        else 
+        {
+            die(mysqli_error($con));
+        }
+
+
+
+b) how to execute a query 
+
+    $insert="insert into tablename(columnsname) values('value');
+    $query=mysqli_query($con,$insert); 
+
+c) how to fetch data from database in mysqli 
+
+    There are four types of fetch functions in mysqli 
+
+    a) $fetch=mysqli_fetch_array($query);
+                ex:  $fetch["uid"];
+    b) $fetch=mysqli_fetch_object($query);
+                ex: $fetch->uid;
+    c) $fetch=mysqli_fetch_assoc($query);                     
+
+                ex: $fetch[0]["uid"];
+    d) $num_rows=fetch_num_rows($query); 
+
+
+ d) how to check a connection  
+
+      die(mysqli_error($con));
+
+e) how to stop connection  
+
+    mysqli_close();
+    
