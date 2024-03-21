@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background: url('images/back.gif') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        ul 
+        {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+        ul li
+        {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            display: inline-block;
+            padding: 15px 15px;
+        }
+        ul li a 
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        section 
+        {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        div 
+        {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            margin-top: 5%;
+        }
+        input,textarea 
+        {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-left: 15%;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <section>
+
+        <div>
+            <h1 align="center">Contact Form</h1>
+            <hr style="width:20%">
+            <form>
+                <input type="text" name="name" placeholder="Name *" required />
+                <br><br>
+                
+                <input type="text" name="email" placeholder="Email *" required />
+                <br><br>
+                
+                <input type="text" name="phone" placeholder="Phone *" required />
+                <br><br>
+
+                <input type="text" name="subject" placeholder="subject *" required />
+                <br><br>
+
+                <textarea  name="message" placeholder="Message *" required></textarea>
+                <br><br>
+                
+                <input type="submit" name="send" value="Send" placeholder="Send *" required />
+                <br><br>
+            </form>
+        
+        </div>
+        <div>    
+            
+            <h1 align="center">Our Office Address! <span class="fa fa-map-marker"></span></h1>
+            <hr style="width:20%">
+
+            
+                <h1>Tops technology pvt Ltd</h1>
+                <p><b> <span class="fa fa-map-marker"></span> Office Address :</b>
+                    TOPS Technologies
+                    1st Floor, Aditya Complex, Jalaram 2 Street Number 2, above Sbi Bank, nr. Indira Circle, Jala Ram Nagar, Rajkot, Gujarat 360005
+                    </p>
+            
+               <p><b> <span class="fa fa-phone"></span> Call us :</b> (+91)9998003879</p>
+               
+               <p><b> <span class="fa fa-inbox"></span> Email us :</b> <a href="mailto:bkpandey.pandey@gmail.com">bkpandey.pandey@gmail.com</a></p>     
+
+               <p><b> <span class="fa fa-internet-explorer"></span> Visit our website :</b> <a href="https://www.tops-int.com" target="_blank">www.tops-int.com</a></p>
+        </div>
+
+    </section>
+
+</body>
+</html>

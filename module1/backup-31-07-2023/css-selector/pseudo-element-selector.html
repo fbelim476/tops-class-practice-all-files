@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        .content 
+        {
+         width: 40%;
+         height: auto;
+         margin-left: 30%;
+         margin-top: 5%;
+         padding: 25px;
+         background-color: white;
+        }
+        input[type="text"], input[type="password"]
+        {
+            width: 250px;
+            height: auto;
+            padding: 8px;
+            border: none;
+            border-bottom: solid 2px black;
+        }
+        input[type="submit"]
+        {
+            width: 120px;
+            height: auto;
+            margin: auto;
+            padding: 8px;
+            background-color: green;
+            border: none;
+            color: white;
+
+        }
+        ::placeholder 
+        {
+            color: blue;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form>
+            <input type="text" name="email" placeholder="Enter email">
+            <br><br>
+            
+            <input type="password" name="pass" placeholder="Enter Password">
+            <br><br>
+            
+            <input type="submit" name="login" placeholder="Enter Submit" value="Login">
+            <a href="#">Forget Password</a>
+            <br><br>
+            <b>Don't have an account ? <a href="#">Create your account</a></b>
+        </form>
+    </div>
+    
+</body>
+</html>

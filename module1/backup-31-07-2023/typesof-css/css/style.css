@@ -1,0 +1,13 @@
+body
+{
+    background-color: aliceblue;
+} 
+div 
+{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding: 45px;
+    border: double 15px gray;
+}

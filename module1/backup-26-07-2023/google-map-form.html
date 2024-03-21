@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background: url('images/back.gif') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        ul 
+        {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+        ul li
+        {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            display: inline-block;
+            padding: 15px 15px;
+        }
+        ul li a 
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        section 
+        {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        div 
+        {
+            width: 45%;
+            height: auto;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            margin-top: 5%;
+        }
+        input,textarea 
+        {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-left: 15%;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <section>
+
+        <div>
+            <h1 align="center">Contact Form</h1>
+            <hr style="width:20%">
+            <form>
+                <input type="text" name="name" placeholder="Name *" required />
+                <br><br>
+                
+                <input type="text" name="email" placeholder="Email *" required />
+                <br><br>
+                
+                <input type="text" name="phone" placeholder="Phone *" required />
+                <br><br>
+
+                <input type="text" name="subject" placeholder="subject *" required />
+                <br><br>
+
+                <textarea  name="message" placeholder="Message *" required></textarea>
+                <br><br>
+                
+                <input type="submit" name="send" value="Send" placeholder="Send *" required />
+                <br><br>
+            </form>
+        
+        </div>
+        <div>    
+            
+            <h1 align="center">Contact with Google map!</h1>
+            <hr style="width:20%">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6768121719374!2d70.77229007412227!3d22.290229143262646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca248c77c099%3A0xdf5ac10af64ac8ee!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1690342415823!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        
+        </div>
+
+    </section>
+
+</body>
+</html>

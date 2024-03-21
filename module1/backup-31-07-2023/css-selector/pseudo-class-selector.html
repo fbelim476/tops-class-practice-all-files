@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        #content 
+        {
+         width: 100%;
+         height: auto;
+         margin-left: 0;
+         margin-top: 5%;
+         padding: 25px;
+         display: flex;
+         flex-direction: row;
+         
+        }
+        .login-img 
+        {
+            width: 40%;
+            height: auto;
+            margin-left: 5%;
+        }
+        .login-img img 
+        {
+            width: 85%;
+        }
+        .login-form 
+        {
+            width: 30%;
+            height: 250px;
+            margin-left: 2%;
+            background-color: white;
+            padding: 25px;
+            margin-top: 5%;
+        }
+        input[type="text"], input[type="password"]
+        {
+            width: 250px;
+            height: auto;
+            padding: 8px;
+            border: none;
+            border-bottom: solid 2px black;
+        }
+        input[type="submit"]
+        {
+            width: 120px;
+            height: auto;
+            margin: auto;
+            padding: 8px;
+            background-color: green;
+            border: none;
+            color: white;
+
+        }
+        ::placeholder 
+        {
+            color: blue;
+            font-size: 18px;
+
+        }
+        .navbar
+        {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        .navbar-brand 
+        {
+            margin-left: 5%;
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar-brand span 
+        {
+            color: orange;
+        }
+        .navbar-link li 
+        {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .navbar-link a 
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* pseudo class selector */
+        .navbar-link a:hover 
+        {
+           color: red;
+        }
+        .navbar-link a:active 
+        {
+            color: yellowgreen;
+            
+        }
+        .navbar-link a:link
+        {
+            color: yellow;
+        }
+        /* .navbar-link a:visited 
+        {
+            color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <!-- navbar start here -->
+    <div class="nav navbar navbar-top">
+      <a href="#" class="navbar-brand">Flipkart <span>App</span></a>  
+      <ul class="navbar-link">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Account</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <!-- content start here -->
+
+    <section id="content">
+
+    <div class="login-img">
+        <img src="images/8622.png_860-removebg-preview.png">
+    </div>    
+
+    <div class="login-form">
+        <form>
+            <input type="text" name="email" placeholder="Enter email">
+            <br><br>
+            
+            <input type="password" name="pass" placeholder="Enter Password">
+            <br><br>
+            
+            <input type="submit" name="login" placeholder="Enter Submit" value="Login">
+            <a href="#">Forget Password</a>
+            <br><br>
+            <b>Don't have an account ? <a href="#">Create your account</a></b>
+        </form>
+    </div>
+    
+
+</section>
+</body>
+</html>
